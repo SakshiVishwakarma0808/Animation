@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+div{
+height:400px;
+width:400px;
+background:maroon;
+color:white;
+border-radius:15px;
+border:20px groove navy;
+line-height:400px;
+font-size:50px;
+margin:100px auto;
+text-align:center;
+animation-name:clr;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-diraction:alternate reverse;
+animation-delay:1s;
+}
+div:hover{
+animation-play-state:paused;
+}
+body{
+background:url("w2.jpg");
+background-size:cover;
+}
+@keyframes clr{
+0%{
+background:red;
+box-shadow:25px 25px 15px 5px black,35px 35px 25px 10px red,45px 45px 35px 10px green ;
+}
+50%{
+background:orange;
+transform:rotate(360deg);
+box-shadow:15px 15px 15px 5px grey,25px 25px 15px 10px navy,35px 35px 25px 10px aqua;
+border-radius:50px;
+}
+100%{
+background:aqua;
+color:black;
+border:10px solid groove; 
+}
+}
+</style>
+</head>
+<body>
+<div>
+Techpile
+</div>
+</body>
+</html>
