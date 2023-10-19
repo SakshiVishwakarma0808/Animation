@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+div{
+height:500px;
+width:500px;
+border-radius:10px;
+animation-name:chg;
+animation-duration:2s;
+transform:all 1s;
+margin:100px auto;
+line-height:500px;
+text-align:center;
+font-size:50px;
+animation-iteration-count:infinite;
+animation-diraction: reverse;
+
+}
+@keyframes chg{
+0%{
+background:url("img.jpg");
+background-size:cover;
+border:10px solid green;
+border-radius:10px;
+color:white;
+}
+50%{
+background:url("w2.jpg");
+background-size:cover;
+border:10px solid red;
+border-radius:10px;
+color:navy;
+}
+100%{
+background:url("water.jpg");
+background-size:cover;
+border:10px solid blue;
+border-radius:10px;
+color:orange;
+}
+}
+div:hover{
+animation-play-state:paused;
+}
+</style>
+</head>
+<body>
+<div>
+Sakshi
+</div>
+</body>
+</html>
