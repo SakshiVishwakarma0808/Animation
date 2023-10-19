@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+div{
+height:50px;
+width:200px;
+background:navy;
+color:white;
+border:1px solid black;
+font-weight:bold;
+line-height:50px;
+font-size:26px;
+}
+#d1{
+background:navy;
+animation-name:abc;
+animation-duration:2s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+animation-direction:alternate;
+}
+#d2{
+background:red;
+animation:abc 2s ease infinite alternate;
+}
+
+#d4{
+background:orange;
+animation:abc 2s ease-in infinite alternate;
+}
+#d5{
+background:maroon;
+animation:abc 2s ease-out infinite alternate;
+}
+#d6{
+background:yellow;
+animation:abc 2s ease-in-out infinite alternate;
+}
+@keyframes abc{
+from{
+width:200px;
+left:0%;
+}
+to{
+width:1000px;
+left:80%;
+}
+}
+</style>
+</head>
+<body>
+<div id="d1">Linear</div>
+<div id="d2">Ease</div>
+<div id="d4">Ease-in</div>
+<div id="d5">Ease-out</div>
+<div id="d6">Ease-in-out</div>
+</body>
+</html>
